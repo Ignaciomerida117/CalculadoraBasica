@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Basica</title> <!--titulo de pagina web-->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--Incluye la librería jQuery versión 3.6.0 desde un CDN, lo cual facilita la manipulación del DOM y otras tareas de JavaScript.-->
+</head>
+
+
+<body>
+    <div class="container">
+        <!--defines el contenedor para la calculadora-->
+        <!--<h1>Prctica 1 - Calculadora Basica</h1>-->
+        <h2>PRACTICA 1 - CALCULADORA BASICA</h2> <!--titulo de la calculadora-->
+        <form id="calcForm"><!--formulario donde el usuario ingresa los nuemeros-->
+            <input type="number" id="num1" placeholder="Núm 1" required> <!--campo de entrada del primer nuermo-->
+            <input type="number" id="num2" placeholder="Núm 2" required><!--campos de entrada del segundo numero--> 
+            <select id="operation"> <!--seleccionar la operacion aritmetica-->
+                
+                
+                <option value="add">Suma</option>
+                <option value="subtract">Resta</option>
+                <option value="multiply">Multiplicación</option>
+                <option value="divide">División</option>
+            </select><!--selecciona entre la suma, resta, multi, division-->
+
+            <button type="submit">Ejecutar</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script> <!--cargara javascript externo-->
+</body>
+</html>
+
